@@ -12,7 +12,7 @@ const adminProduct = require("./routes/adminProduct");
 const path = require("path");
 const StartMongo = require("./config/db");
 StartMongo();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 app.use(cors({ credentials: true, origin: process.env.WEBAPP_ORIGIN ?? 'http://localhost:3000' }));
 app.use(bodyParser.json());
 /* BACKEND API ENDPOINTS */
